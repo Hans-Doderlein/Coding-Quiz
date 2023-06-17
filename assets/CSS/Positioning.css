@@ -1,0 +1,98 @@
+body * {
+  padding: 5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+/* brings score link above backdrop to maintain functionality */
+#scoresLink {
+  z-index: 1000;
+}
+
+/* hides close button, brings it above backdrop */
+#closeButton {
+  display: none;
+  z-index: 1000;
+}
+
+/* stylization of score card */
+#scoreCard {
+  border-radius: 8px;
+  position: absolute;
+  width: 70%;
+  height: 80%;
+  left: 15%;
+  top: 10%;
+  z-index: 1000;
+  display: none;
+  overflow-y: scroll;
+}
+
+/* style of backdrop */
+#backdrop {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  background-color: black;
+  display: none;
+  padding: 0;
+}
+
+/* hides form until needed */
+form {
+  visibility: hidden;
+}
+
+#scoreheaders {
+  display: flex;
+  justify-content: space-around;
+}
+
+.scoreItem {
+  display: flex;
+  justify-content: space-around;
+}
+
+.valueDiv {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.nameDiv {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  width: 70%;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
