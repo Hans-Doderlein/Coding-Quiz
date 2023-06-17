@@ -1,0 +1,139 @@
+/* custom variables */
+:root {
+  --primaryColor: #fdf5df;
+  --secondaryColor: #5ebec4;
+  --tertiaryColor: #f92c85;
+}
+
+/* style background */
+body {
+  background-color: #fdf5df;
+  cursor: default;
+}
+
+/* style view score link */
+#scoresLink {
+  color: var(--tertiaryColor);
+  text-decoration: underline;
+}
+
+/* style close button for score card */
+#closeButton {
+  color: var(--secondaryColor);
+}
+
+/* style score card */
+#scoreCard {
+  background-image: linear-gradient(black 0%, var(--primaryColor) 100%);
+  border: 5px solid var(--tertiaryColor);
+  box-shadow: 0 0 1rem var(--tertiaryColor);
+}
+
+/* style header */
+header {
+  border: 3px solid var(--tertiaryColor);
+  background-color: var(--secondaryColor);
+  color: var(--tertiaryColor);
+}
+
+/* styles on hover of header items */
+header a:hover,
+header div button:hover {
+  box-shadow: 0 0 1.5rem var(--tertiaryColor);
+  border-radius: 5px;
+  background-color: var(--primaryColor);
+  border: 3px solid var(--tertiaryColor);
+  cursor: pointer;
+}
+
+/* style buttons */
+header div button {
+  color: var(--tertiaryColor);
+  background-color: var(--secondaryColor);
+  border: 3px solid var(--tertiaryColor);
+}
+
+header h1,
+header a,
+header div h3 {
+  border: 3px solid transparent;
+}
+
+/* changes cursor style of clickable objects */
+header div button:hover {
+  cursor: pointer;
+}
+
+h2 {
+  text-shadow: 1px 1px var(--tertiaryColor);
+}
+
+form {
+  text-shadow: 1px 1px var(--secondaryColor);
+}
+
+form label {
+  border: 3px solid transparent;
+}
+
+/* hover styles on answer choices */
+form label:hover {
+  box-shadow: 0 0 1.5rem var(--tertiaryColor);
+  border: 3px solid var(--tertiaryColor);
+  color: var(--tertiaryColor);
+  border-radius: 5px;
+}
+
+/* style start and submit button */
+#startButton,
+#submitButton {
+  border: 2px solid var(--secondaryColor);
+  background-color: var(--tertiaryColor);
+  color: var(--primaryColor);
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* style on submit and start button hover effects */
+#startButton:hover,
+#submitButton:hover {
+  background-color: var(--secondaryColor);
+  box-shadow: 0 0 1.5rem var(--secondaryColor);
+  color: var(--tertiaryColor);
+}
+
+/* style h3 */
+h3 {
+  text-decoration: underline;
+  font-size: 1.5rem;
+  border: 3px solid transparent;
+  color: var(--secondaryColor);
+  text-shadow: 1px 1px var(--tertiaryColor);
+}
+
+/* hover effects on h3 */
+h3:hover {
+  box-shadow: 0 0 1rem var(--secondaryColor);
+  border: 3px solid var(--secondaryColor);
+  border-radius: 5px;
+}
+
+/* Style h4 */
+h4 {
+  color: var(--tertiaryColor);
+  font-size: 1.5rem;
+  border: 3px solid transparent;
+  text-shadow: 1px 1px var(--secondaryColor);
+}
+
+/* style hover effect on h4 */
+h4:hover {
+  text-shadow: 0 0 1rem var(--tertiaryColor);
+  text-decoration: underline;
+}
+
+/* style timer */
+#timeLeft {
+  color: var(--tertiaryColor);
+  text-shadow: none;
+}
