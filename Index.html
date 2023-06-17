@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Quiz</title>
+    <link id="themeLink" rel="stylesheet" href="./assets/CSS/Dark-style.css" />
+    <link rel="stylesheet" href="./assets/CSS/Positioning.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="" id="scoresLink">View Scores</a>
+      <a href="" id="closeButton">Close Scores</a>
+      <h1>Practice Quiz On JavaScript Basics</h1>
+      <div id="timer">
+        <h3 id="timeLeft">Timer</h3>
+        <button id="themeButton">
+          Click on this to switch <br />
+          between light and dark mode!
+        </button>
+      </div>
+    </header>
+
+    <main class="quizCards">
+      <h2 class="quizQuestion">
+        Click the start button to begin the quiz. You will have 2 minutes to
+        answer as many questions as possible. Should you get a questions wrong,
+        20 seconds will be deducted from your time.
+      </h2>
+      <form id="quiz-form">
+        <input type="radio" id="option1" name="answerOption" value="0" />
+        <label class="quiz-answer" id="O1" for="option1">Answer choice A</label>
+        <br />
+        <br />
+        <input type="radio" id="option2" name="answerOption" value="1" />
+        <label class="quiz-answer" id="O2" for="option2">Answer choice B</label>
+        <br />
+        <br />
+        <input type="radio" id="option3" name="answerOption" value="2" />
+        <label class="quiz-answer" id="O3" for="option3">Answer choice C</label>
+        <br />
+        <br />
+        <input type="radio" id="option4" name="answerOption" value="3" />
+        <label class="quiz-answer" id="O4" for="option4">Answer choice D</label>
+        <br />
+        <br />
+        <input type="submit" id="submitButton" />
+      </form>
+      <button id="startButton">Start Quiz</button>
+    </main>
+    <div id="scoreCard">
+      <div id="scoreheaders">
+        <h3>Name</h3>
+        <h3>Score</h3>
+      </div>
+      <div id="scores"></div>
+    </div>
+
+    <div id="backdrop"></div>
+
+    <script src="./assets/JavaScript/scripts.js"></script>
+  </body>
+</html>
